@@ -6,7 +6,7 @@ from firebase_admin import credentials, firestore, initialize_app
 app= Flask(__name__)
 
 # Initialize Firestore DB
-cred = credentials.Certificate('line-bot-ecommerce-fe1fdd0257c4.json')
+cred = credentials.Certificate('Firestore憑證.json')
 default_app = initialize_app(cred)
 db = firestore.client()
 
